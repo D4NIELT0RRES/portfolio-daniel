@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Torres — Portfólio</title>
+  <meta name="description" content="Portfólio de Daniel Torres, estudante de Engenharia de Software na FIAP. Projetos em React, TypeScript, Supabase, IA, Kotlin e Python." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='%232997ff'/><stop offset='1' stop-color='%23bf5af2'/></linearGradient></defs><rect width='32' height='32' rx='8' fill='url(%23g)'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'>DT</text></svg>" />
+</head>
+<body>
+  <!-- Nav local, inspirada na sub-navegação das páginas de produto -->
+  <header class="localnav">
+    <div class="localnav__inner">
+      <a href="/" class="localnav__title">Daniel Torres</a>
+      <nav class="localnav__menu" aria-label="Seções">
+        <a href="#destaques">Destaques</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#skills">Skills</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="/processo.html">Processo</a>
+        <a href="#contato" class="pill">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: dispositivo que cresce com o scroll -->
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Engenharia de Software · FIAP</p>
+        <h1 class="hero__title">Daniel Torres.</h1>
+        <p class="hero__sub">Código que parece simples.<br />Porque deu trabalho.</p>
+      </div>
+      <div class="mac" aria-hidden="true">
+        <div class="mac__screen">
+          <div class="mac__display">
+            <img class="mac__shot is-on" src="/img/pavio.jpg" alt="" />
+            <img class="mac__shot" src="/img/orbitrace.jpg" alt="" />
+            <img class="mac__shot" src="/img/studycam.jpg" alt="" />
+          </div>
+        </div>
+        <div class="mac__base"><span></span></div>
+      </div>
+      <div class="hero__captions">
+        <p class="hero__caption is-on"><strong>PAVIO Trading.</strong> Vite, GSAP e Supabase.</p>
+        <p class="hero__caption"><strong>Orbitrace.</strong> Global Solution 2026.</p>
+        <p class="hero__caption"><strong>StudyCam.</strong> De Python para React.</p>
+      </div>
+    </section>
+
+    <!-- MANIFESTO: palavras acendem conforme o scroll -->
+    <section class="statement">
+      <p class="statement__text">Eu transformo ideias em produtos digitais. Do banco de dados à última animação. Com React, TypeScript, Supabase e inteligência artificial. E com uma atenção quase obsessiva aos detalhes que ninguém vê, mas todo mundo sente.</p>
+    </section>
+
+    <!-- NUMEROS -->
+    <section class="numbers" aria-label="Números">
+      <div class="numbers__item"><span class="numbers__val" data-count="74">0</span><span class="numbers__label">repositórios públicos<br />no GitHub</span></div>
+      <div class="numbers__item"><span class="numbers__val" data-count="5">0</span><span class="numbers__label">linguagens de programação<br />em projetos reais</span></div>
+      <div class="numbers__item"><span class="numbers__val" data-count="2024" data-plain>0</span><span class="numbers__label">ano do primeiro<br />commit público</span></div>
+    </section>
+
+    <!-- DESTAQUES: galeria com autoplay -->
+    <section class="highlights" id="destaques" data-nav="light">
+      <div class="wrap">
+        <h2 class="section-title reveal">Veja os destaques.</h2>
+      </div>
+      <div class="gallery" tabindex="0" aria-label="Galeria de projetos em destaque">
+        <ul class="gallery__track">
+          <li class="gcard gcard--eventkit">
+            <p class="gcard__caption"><strong>EventKit Pro.</strong> Um agente de IA que gerencia o estoque de uma produtora de eventos por conversa.</p>
+            <div class="gcard__art">
+              <div class="chat">
+                <div class="chat__msg chat__msg--me">Adiciona 4 caixas de som na categoria Áudio</div>
+                <div class="chat__msg chat__msg--ai"><span class="chat__ok">✓</span> 4 equipamentos adicionados em <b>Áudio</b></div>
+                <div class="chat__msg chat__msg--me">Quantos itens estão em manutenção?</div>
+                <div class="chat__typing"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          </li>
+          <li class="gcard gcard--img">
+            <p class="gcard__caption"><strong>Orbitrace.</strong> Monitoramento de detritos espaciais para satélites brasileiros.</p>
+            <img src="/img/orbitrace.jpg" alt="Página inicial do Orbitrace" loading="lazy" />
+          </li>
+          <li class="gcard gcard--img gcard--dark">
+            <p class="gcard__caption"><strong>PAVIO Trading.</strong> Uma escola de trading com animações que acompanham o scroll.</p>
+            <img src="/img/pavio.jpg" alt="Página inicial do PAVIO Trading" loading="lazy" />
+          </li>
+          <li class="gcard gcard--busca">
+            <p class="gcard__caption"><strong>BuscaGlobal.</strong> Pesquise em qualquer país. Veja o preço em reais.</p>
+            <div class="gcard__art">
+              <div class="search">
+                <div class="search__bar"><span class="search__flag">JP</span><span>fone sem fio</span><span class="search__go">⌕</span></div>
+                <div class="search__row"><span>Loja A</span><span class="search__price">¥ 12.800 <em>→ em reais</em></span></div>
+                <div class="search__row"><span>Loja B</span><span class="search__price">¥ 9.990 <em>→ em reais</em></span></div>
+                <div class="search__badge">câmbio convertido automaticamente</div>
+              </div>
+            </div>
+          </li>
+          <li class="gcard gcard--doevida">
+            <p class="gcard__caption"><strong>DoeVida.</strong> TCC que conecta doadores de sangue a quem precisa.</p>
+            <div class="gcard__art"><img src="/img/doevida-logo.png" alt="Logo do DoeVida" class="doevida-logo" loading="lazy" /></div>
+          </li>
+          <li class="gcard gcard--img gcard--light">
+            <p class="gcard__caption"><strong>StudyCam.</strong> Notas de estudo organizadas, migradas de Python para React.</p>
+            <img src="/img/studycam.jpg" alt="Dashboard do StudyCam" loading="lazy" />
+          </li>
+        </ul>
+      </div>
+      <div class="dotnav">
+        <div class="dotnav__dots" role="tablist" aria-label="Escolher destaque"></div>
+        <button class="dotnav__play" type="button" aria-label="Pausar"><span class="i-pause"></span></button>
+      </div>
+    </section>
+
+    <!-- PROJETOS: tela fixa que troca conforme os capítulos -->
+    <section class="showcase" id="projetos" data-nav="light">
+      <div class="wrap">
+        <h2 class="section-title reveal">Projetos em detalhe.</h2>
+      </div>
+      <div class="showcase__grid wrap">
+        <div class="showcase__stage">
+          <div class="device">
+            <div class="device__screen">
+              <div class="screen is-on" data-screen="eventkit">
+                <div class="ek">
+                  <aside class="ek__side"><b>EventKit</b><span class="on">Assistente</span><span>Equipamentos</span><span>Kits</span><span>Ordens</span><span>Agenda</span></aside>
+                  <div class="ek__main">
+                    <div class="ek__stats"><div><small>Equipamentos</small><b>248</b></div><div><small>Em evento</small><b>61</b></div><div><small>Manutenção</small><b>7</b></div></div>
+                    <div class="ek__chat">
+                      <p class="me">Monta um kit de som para 300 pessoas</p>
+                      <p class="ai">Sugeri o <b>Kit Áudio M</b>: 2 caixas line array, 1 mesa 16 canais, 4 microfones. Confirmar?</p>
+                      <div class="ek__btns"><span>Confirmar</span><span>Editar</span></div>
+                    </div>
+                  </div>
+                </div>
+                <span class="screen__note">Interface ilustrativa</span>
+              </div>
+              <div class="screen" data-screen="orbitrace"><img src="/img/orbitrace.jpg" alt="" loading="lazy" /></div>
+              <div class="screen" data-screen="busca">
+                <div class="bg">
+                  <p class="bg__logo">BuscaGlobal</p>
+                  <div class="bg__bar"><span class="bg__country">Alemanha</span><span class="bg__q">bicicleta urbana</span><span class="bg__btn">Buscar</span></div>
+                  <div class="bg__cards"><div><i></i><b>Resultado 1</b><small>€ 499 → BRL</small></div><div><i></i><b>Resultado 2</b><small>€ 389 → BRL</small></div><div><i></i><b>Resultado 3</b><small>€ 620 → BRL</small></div></div>
+                </div>
+                <span class="screen__note">Interface ilustrativa</span>
+              </div>
+              <div class="screen" data-screen="doevida">
+                <div class="dv"><img src="/img/doevida-logo.png" alt="" /><p>Doe sangue.<br />Doe vida.</p><div class="dv__chips"><span>App Kotlin</span><span>API Node.js</span><span>Banco SQL</span></div></div>
+              </div>
+              <div class="screen" data-screen="pavio"><img src="/img/pavio.jpg" alt="" loading="lazy" /></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase__chapters">
+          <article class="chapter" data-target="eventkit">
+            <p class="chapter__kicker">Agente de IA · 2026</p>
+            <h3>EventKit Pro</h3>
+            <p>Sistema de gestão de equipamentos para produtoras de eventos. O ponto de entrada é um <strong>chat com um agente de IA</strong>, que cadastra, atualiza e resume o estoque usando ferramentas (tool use), em vez de formulários.</p>
+            <ul class="chips"><li>React 19</li><li>TypeScript</li><li>TanStack Start</li><li>Supabase</li><li>Claude API</li><li>Cloudflare Workers</li></ul>
+            <a class="link" href="https://github.com/D4NIELT0RRES/eventkit-pro" target="_blank" rel="noopener">Ver no GitHub ›</a>
+          </article>
+          <article class="chapter" data-target="orbitrace">
+            <p class="chapter__kicker">Global Solution · FIAP · 2026</p>
+            <h3>Orbitrace</h3>
+            <p>Rastreador de detritos espaciais que calcula risco de colisão para os satélites brasileiros CBERS-4A, Amazonia-1 e SCD-2. Feito em equipe, alinhado ao <strong>ODS 9</strong>, com quiz, galeria e três temas de cor.</p>
+            <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+            <a class="link" href="https://global-solution-webdev.vercel.app" target="_blank" rel="noopener">Abrir o site ›</a>
+          </article>
+          <article class="chapter" data-target="busca">
+            <p class="chapter__kicker">Full-stack · 2026</p>
+            <h3>BuscaGlobal</h3>
+            <p>Escolha um país, pesquise produtos ou lojas e veja os resultados com <strong>preço convertido para real</strong>. Tem autenticação, histórico por usuário e banco protegido com Row Level Security.</p>
+            <ul class="chips"><li>Next.js 16</li><li>TypeScript</li><li>Tailwind</li><li>shadcn/ui</li><li>Supabase</li></ul>
+          </article>
+          <article class="chapter" data-target="doevida">
+            <p class="chapter__kicker">TCC · 2025</p>
+            <h3>DoeVida</h3>
+            <p>Plataforma que conecta doadores voluntários de sangue a quem precisa de doação. Um ecossistema completo: <strong>app mobile, back-end e banco de dados</strong>, com documentação em Trello e design no Figma.</p>
+            <ul class="chips"><li>Kotlin</li><li>Node.js</li><li>SQL</li><li>Figma</li></ul>
+            <a class="link" href="https://github.com/D4NIELT0RRES/hub-projeto-tcc" target="_blank" rel="noopener">Ver no GitHub ›</a>
+          </article>
+          <article class="chapter" data-target="pavio">
+            <p class="chapter__kicker">Motion design · 2026</p>
+            <h3>PAVIO Trading</h3>
+            <p>Landing page de uma escola de trading com animações guiadas pelo scroll, vídeos de fundo e um formulário que salva cada cadastro no banco. A mesma stack <strong>deste portfólio</strong>.</p>
+            <ul class="chips"><li>Vite</li><li>GSAP</li><li>Lenis</li><li>Vercel Functions</li><li>Supabase</li></ul>
+            <a class="link" href="https://pavio-trading.vercel.app" target="_blank" rel="noopener">Abrir o site ›</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS: grade bento -->
+    <section class="skills" id="skills">
+      <div class="wrap">
+        <h2 class="section-title reveal">Skills.<br /><span class="muted">Ferramentas certas para cada problema.</span></h2>
+        <div class="bento">
+          <div class="tile tile--xl">
+            <p class="tile__kicker">Front-end</p>
+            <p class="tile__big grad">React.</p>
+            <p class="tile__text">Interfaces com React 19, TypeScript, Next.js 16 e Vite. Componentes com shadcn/ui e Tailwind.</p>
+          </div>
+          <div class="tile">
+            <p class="tile__kicker">Back-end e dados</p>
+            <p class="tile__mid">Supabase, Node.js e SQL.</p>
+            <p class="tile__text">Postgres com Row Level Security, APIs com Express e funções serverless.</p>
+          </div>
+          <div class="tile tile--ai">
+            <p class="tile__kicker">IA aplicada</p>
+            <p class="tile__mid">Agentes com tool use.</p>
+            <p class="tile__text">Claude API e servidores MCP integrados a produtos reais.</p>
+          </div>
+          <div class="tile">
+            <p class="tile__kicker">Mobile</p>
+            <p class="tile__mid">Kotlin.</p>
+            <p class="tile__text">Apps Android como o DoeVida, LionSchool e RickMorty.</p>
+          </div>
+          <div class="tile">
+            <p class="tile__kicker">Motion</p>
+            <p class="tile__mid">GSAP e Lenis.</p>
+            <p class="tile__text">ScrollTrigger, SplitText e scroll suave, como nesta página.</p>
+          </div>
+          <div class="tile">
+            <p class="tile__kicker">Linguagens</p>
+            <p class="tile__mid">Python e Java.</p>
+            <p class="tile__text">Pensamento computacional em Python e orientação a objetos em Java.</p>
+          </div>
+          <div class="tile tile--wide">
+            <p class="tile__kicker">IoT</p>
+            <p class="tile__mid">Hardware também.</p>
+            <p class="tile__text">Semáforo e controle de LEDs com ESP32 programado em Python.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETORIA -->
+    <section class="journey" id="trajetoria" data-nav="light">
+      <div class="wrap">
+        <h2 class="section-title reveal">Trajetória.</h2>
+        <ol class="timeline">
+          <li class="tl"><span class="tl__year">2024</span><div><h3>Primeiros sites</h3><p>HTML e CSS do zero: galerias, tabelas e páginas publicadas no GitHub Pages.</p></div></li>
+          <li class="tl"><span class="tl__year">2025</span><div><h3>APIs, mobile e hardware</h3><p>Consumo de APIs em JavaScript (filmes, CEP), apps Android em Kotlin e projetos de IoT com ESP32.</p></div></li>
+          <li class="tl"><span class="tl__year">2025</span><div><h3>TCC DoeVida</h3><p>App, back-end e banco de dados de uma plataforma de doação de sangue, entregues em equipe.</p></div></li>
+          <li class="tl"><span class="tl__year">2026</span><div><h3>Engenharia de Software na FIAP</h3><p>Checkpoints e Sprints de Front-end, Web Development e Computational Thinking com Python.</p></div></li>
+          <li class="tl"><span class="tl__year">2026</span><div><h3>Global Solution</h3><p>Orbitrace, solução para o patrimônio espacial brasileiro, publicada na Vercel.</p></div></li>
+          <li class="tl"><span class="tl__year">2026</span><div><h3>Produtos com IA</h3><p>EventKit Pro com agente de IA, BuscaGlobal com Next.js e Supabase, e este portfólio.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="closing" id="contato">
+      <h2 class="closing__title">Vamos construir<br /><span class="grad">o próximo.</span></h2>
+      <p class="closing__sub">Projetos, estágio ou só uma boa conversa sobre código.</p>
+      <div class="closing__cta">
+        <a class="btn" href="https://github.com/D4NIELT0RRES" target="_blank" rel="noopener">Ver meu GitHub</a>
+        <a class="btn btn--ghost" href="/processo.html">Como este site foi feito ›</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__note">Projetos marcados como "interface ilustrativa" são recriações visuais das telas reais. Imagens dos demais projetos são capturas dos sites publicados.</p>
+      <div class="footer__bar">
+        <span>© <span data-year></span> Daniel Torres.</span>
+        <nav><a href="#destaques">Destaques</a><a href="#projetos">Projetos</a><a href="/processo.html">Processo</a><a href="https://github.com/D4NIELT0RRES" target="_blank" rel="noopener">GitHub</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

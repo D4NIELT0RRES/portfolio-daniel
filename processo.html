@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Processo — Daniel Torres</title>
+  <meta name="description" content="Checkpoint 6 (Vibecoding): referências, identidade visual, prompts e registro de correções do portfólio de Daniel Torres." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='%232997ff'/><stop offset='1' stop-color='%23bf5af2'/></linearGradient></defs><rect width='32' height='32' rx='8' fill='url(%23g)'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'>DT</text></svg>" />
+</head>
+<body class="page-doc">
+  <header class="localnav">
+    <div class="localnav__inner">
+      <a href="/" class="localnav__title">Daniel Torres</a>
+      <nav class="localnav__menu" aria-label="Seções">
+        <a href="#referencias">Referências</a>
+        <a href="#idv">IDV</a>
+        <a href="#prompts">Prompts</a>
+        <a href="#correcoes">Correções</a>
+        <a href="/">Portfólio</a>
+        <a href="#resultado" class="pill">Resultado</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="doc-hero">
+      <p class="doc-hero__eyebrow">Checkpoint 6 · Vibecoding</p>
+      <h1 class="doc-hero__title reveal">Como este site<br /><span class="grad">foi feito.</span></h1>
+      <p class="doc-hero__sub">Referências, identidade visual, prompts e correções. O processo importa tanto quanto o resultado.</p>
+    </section>
+
+    <!-- 3.1 REFERENCIAS -->
+    <section class="doc" id="referencias">
+      <div class="wrap">
+        <p class="doc__num">3.1</p>
+        <h2 class="section-title reveal">Referências.</h2>
+        <div class="refs">
+          <article class="ref fade-up">
+            <p class="ref__src">apple.com/macbook-pro</p>
+            <h3>O produto cresce com o scroll</h3>
+            <p><b>O que aproveitei:</b> o notebook que entra pequeno, sobe e ocupa a tela enquanto o título sai de cena. A seção fica "presa" (pin) e o scroll controla a animação.</p>
+            <p><b>Onde usei:</b> hero. No lugar de um produto, a tela do notebook mostra meus projetos publicados.</p>
+          </article>
+          <article class="ref fade-up">
+            <p class="ref__src">apple.com/airpods-pro</p>
+            <h3>Texto que acende palavra por palavra</h3>
+            <p><b>O que aproveitei:</b> um parágrafo grande, em cinza escuro, cujas palavras ficam brancas conforme o scroll avança. Obriga a leitura no ritmo da página.</p>
+            <p><b>Onde usei:</b> manifesto logo depois do hero.</p>
+          </article>
+          <article class="ref fade-up">
+            <p class="ref__src">apple.com/iphone</p>
+            <h3>Galeria "Veja os destaques"</h3>
+            <p><b>O que aproveitei:</b> cards grandes em carrossel horizontal com autoplay, pontos que viram uma barra de progresso e botão de pausar.</p>
+            <p><b>Onde usei:</b> seção Destaques, com um card por projeto.</p>
+          </article>
+          <article class="ref fade-up">
+            <p class="ref__src">Páginas de produto da Apple (blocos "bento")</p>
+            <h3>Grade de blocos com números grandes</h3>
+            <p><b>O que aproveitei:</b> blocos escuros de tamanhos diferentes, com uma palavra ou número enorme em degradê e uma linha de apoio.</p>
+            <p><b>Onde usei:</b> seção Skills.</p>
+          </article>
+          <article class="ref fade-up">
+            <p class="ref__src">gsap.com/scrolltrigger</p>
+            <h3>Pin, scrub e telas que trocam</h3>
+            <p><b>O que aproveitei:</b> os exemplos de seção fixa enquanto o conteúdo rola ao lado, e a animação amarrada à posição do scroll.</p>
+            <p><b>Onde usei:</b> Projetos em detalhe: a tela fica parada à esquerda e troca conforme o capítulo ativo.</p>
+          </article>
+          <article class="ref fade-up">
+            <p class="ref__src">lenis.darkroom.engineering</p>
+            <h3>Scroll suave</h3>
+            <p><b>O que aproveitei:</b> a rolagem com inércia, que deixa todas as animações de scroll mais fluidas e "caras".</p>
+            <p><b>Onde usei:</b> no site inteiro.</p>
+          </article>
+          <article class="ref fade-up">
+            <p class="ref__src">pavio-trading.vercel.app (projeto anterior)</p>
+            <h3>Títulos que sobem por linha</h3>
+            <p><b>O que aproveitei:</b> a mesma stack (Vite, GSAP com ScrollTrigger e SplitText, Lenis) e o efeito de títulos revelados por máscara.</p>
+            <p><b>Onde usei:</b> títulos de todas as seções.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.2 IDV -->
+    <section class="doc doc--mist" id="idv">
+      <div class="wrap">
+        <p class="doc__num">3.2</p>
+        <h2 class="section-title reveal">Identidade visual.</h2>
+
+        <h3 class="doc__h3">Paleta de cores</h3>
+        <div class="swatches">
+          <div class="sw fade-up"><span class="sw__c" style="background:#000000"></span><b>#000000</b><small>Fundo "palco"</small><p>Hero, skills e contato. Faz as telas dos projetos brilharem como produtos.</p></div>
+          <div class="sw fade-up"><span class="sw__c" style="background:#F5F5F7"></span><b>#F5F5F7</b><small>Fundo claro</small><p>Destaques e trajetória. Dá respiro entre as seções escuras.</p></div>
+          <div class="sw fade-up"><span class="sw__c" style="background:#1D1D1F"></span><b>#1D1D1F</b><small>Texto principal</small><p>Grafite em vez de preto puro: menos contraste agressivo na leitura.</p></div>
+          <div class="sw fade-up"><span class="sw__c" style="background:#86868B"></span><b>#86868B</b><small>Texto secundário</small><p>Legendas, rótulos e anos da linha do tempo.</p></div>
+          <div class="sw fade-up"><span class="sw__c" style="background:#2997FF"></span><b>#2997FF</b><small>Destaque e links</small><p>Azul de tecnologia: botões, links e a linha da trajetória.</p></div>
+          <div class="sw fade-up"><span class="sw__c" style="background:linear-gradient(90deg,#2997FF,#BF5AF2)"></span><b>#2997FF → #BF5AF2</b><small>Assinatura</small><p>Degradê azul-violeta só em palavras-chave e números. Representa código (azul) + criatividade (violeta).</p></div>
+        </div>
+        <p class="doc__p">Por que combinam: o conceito é "meus projetos como produtos". Preto, branco e cinzas deixam o conteúdo em primeiro plano, como numa vitrine. A única cor forte é o degradê, então o olho vai direto para o que importa.</p>
+
+        <div class="doc__cols">
+          <div class="fade-up">
+            <h3 class="doc__h3">Tipografia</h3>
+            <p class="type-sample">Inter</p>
+            <p class="doc__p">Inter no lugar da SF Pro (a fonte da Apple, que não pode ser usada na web). Pesos 600–700 com espaçamento negativo (-0,05em) nos títulos grandes, para o visual compacto e preciso. JetBrains Mono só nas etiquetas de tecnologia, lembrando código.</p>
+          </div>
+          <div class="fade-up">
+            <h3 class="doc__h3">Tom e personalidade</h3>
+            <p class="type-sample type-sample--small">Confiante. Minimalista. Direto.</p>
+            <p class="doc__p">Frases curtas que terminam em ponto final ("Daniel Torres.", "Skills.", "Vamos construir o próximo."), como as páginas da Apple. Muito espaço vazio, poucas palavras por bloco e números grandes. Nada de exagero: só projetos e dados reais.</p>
+          </div>
+        </div>
+
+        <h3 class="doc__h3">Estrutura da página</h3>
+        <ol class="structure">
+          <li><b>Hero</b><span>Nome e frase de impacto. O notebook cresce e mostra projetos reais logo de cara.</span></li>
+          <li><b>Manifesto</b><span>Quem eu sou em um parágrafo, lido no ritmo do scroll.</span></li>
+          <li><b>Números</b><span>Prova rápida: repositórios, linguagens e desde quando programo.</span></li>
+          <li><b>Destaques</b><span>Visão geral de 6 projetos em cards, para quem tem pouco tempo.</span></li>
+          <li><b>Projetos em detalhe</b><span>Cinco projetos com contexto, stack e links, para quem quer se aprofundar.</span></li>
+          <li><b>Skills</b><span>Habilidades agrupadas por área, cada uma ligada a um projeto real.</span></li>
+          <li><b>Trajetória</b><span>Experiências e eventos de 2024 a 2026, em linha do tempo.</span></li>
+          <li><b>Contato</b><span>Chamada final para o GitHub e para esta página de processo.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3.3 PROMPTS -->
+    <section class="doc" id="prompts">
+      <div class="wrap">
+        <p class="doc__num">3.3</p>
+        <h2 class="section-title reveal">Prompts utilizados.</h2>
+        <p class="doc__p">Copiados exatamente como foram enviados ao Claude Code (modelo Claude Opus 5.5), sem correção de digitação, na ordem de envio.</p>
+
+        <h3 class="doc__h3">Contexto: o projeto anterior que definiu a stack</h3>
+        <div class="prompt fade-up"><span class="prompt__tag">Contexto 1</span><pre>acesse o link deste video: https://www.youtube.com/watch?v=5ryZ6Tsco9c
+
+
+veja tudo que o homem produziou, o site que ele fez e faça um exatamente igual e me entregue 100% igual o mesmo site mas agora o MEU site</pre></div>
+        <div class="prompt fade-up"><span class="prompt__tag">Contexto 2</span><pre>monte o site para um negocio de trade, mercado financeiro, bolsa de valores, nao coloque meus dados, coloque videos e imagens de fundo, voce mesmo deve buscar os melhores videos e imagens, publique na vercel, idioma do site em português</pre></div>
+        <div class="prompt fade-up"><span class="prompt__tag">Contexto 3</span><pre>me mande o link do site para eu ver se ficou exatamente igual</pre></div>
+
+        <h3 class="doc__h3">Prompt inicial do portfólio</h3>
+        <div class="prompt prompt--main fade-up"><span class="prompt__tag">Prompt inicial</span><pre>/Users/danieltorres/Downloads/Checkpoint\ 6.pdf , agora leia este documento e organize para im pensando no site da apple original um site parecido masi usando a tecnologia que voce me entregou no video do trade, com a mesma perfeicao, criatividade e inovacao logico</pre></div>
+
+        <h3 class="doc__h3">Prompts de ajuste</h3>
+        <p class="doc__p doc__p--note">Os próximos prompts de ajuste entram aqui, na ordem em que forem enviados.</p>
+
+        <div class="critique fade-up">
+          <h3 class="doc__h3">Análise crítica do prompt inicial</h3>
+          <ul>
+            <li><b>Faltou especificar o conteúdo.</b> O prompt não dizia quais projetos, skills e eventos entrar. A IA teve que procurar nas pastas do computador e no GitHub. Funcionou, mas poderia ter escolhido projetos que eu não queria mostrar.</li>
+            <li><b>"Parecido com a Apple" é vago.</b> Seria melhor citar as páginas exatas (MacBook Pro, AirPods Pro, iPhone) e o comportamento de cada uma, como fiz depois nas referências.</li>
+            <li><b>Faltaram cores, fontes e seções.</b> As decisões de IDV ficaram com a IA. Num prompt melhor, eu teria definido a paleta e a ordem das seções.</li>
+            <li><b>Ponto positivo:</b> citar a stack de um projeto anterior ("a tecnologia do vídeo do trade") deu à IA uma base técnica clara e evitou retrabalho.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.4 CORRECOES -->
+    <section class="doc doc--mist" id="correcoes">
+      <div class="wrap">
+        <p class="doc__num">3.4</p>
+        <h2 class="section-title reveal">Registro de correções.</h2>
+        <p class="doc__p">Problemas encontrados no QA (abrindo a página, clicando e rolando em desktop e celular), corrigidos um por vez. As rodadas #2 a #7 foram detectadas pela própria IA ao testar o site com capturas de tela, antes de qualquer prompt de ajuste.</p>
+        <div class="fixes" id="fixes-list">
+          <article class="fix fade-up">
+            <span class="fix__n">#1 · Projeto anterior (PAVIO)</span>
+            <dl>
+              <dt>Problema</dt><dd>Na página de cadastro do PAVIO, o título do topo ficava embaixo do menu fixo.</dd>
+              <dt>Correção</dt><dd>Encontrado no QA da própria IA com capturas de tela. Ela adicionou espaço no topo da seção (padding-top: 120px).</dd>
+              <dt>Resultado</dt><dd>Resolveu totalmente.</dd>
+              <dt>Aprendizado</dt><dd>Em sites com menu fixo, pedir no prompt que todo primeiro bloco tenha espaço para o menu.</dd>
+            </dl>
+          </article>
+          <article class="fix fade-up">
+            <span class="fix__n">#2 · Conteúdo</span>
+            <dl>
+              <dt>Problema</dt><dd>O deploy do EventKit Pro retornou erro 404 e o do KidsArena abriu em branco. Não havia como capturar as telas.</dd>
+              <dt>Correção</dt><dd>A IA recriou a interface do EventKit Pro e do BuscaGlobal em HTML/CSS, com o aviso "Interface ilustrativa", e linkou o GitHub no lugar do deploy quebrado.</dd>
+              <dt>Resultado</dt><dd>Resolveu em parte: o visual ficou bom, mas o ideal é ter os projetos no ar.</dd>
+              <dt>Aprendizado</dt><dd>Revisar os links de deploy antes de montar o portfólio e dizer no prompt quais projetos têm site no ar.</dd>
+            </dl>
+          </article>
+          <article class="fix fade-up">
+            <span class="fix__n">#3 · Hero</span>
+            <dl>
+              <dt>Problema</dt><dd>A letra "D" de "Daniel Torres." aparecia com um pedaço cortado no canto.</dd>
+              <dt>Correção</dt><dd>A causa era o degradê recortado no texto (background-clip) somado ao desfoque da animação letra por letra. O título passou a usar cor sólida, e o desfoque é removido ao fim da animação.</dd>
+              <dt>Resultado</dt><dd>Resolveu totalmente.</dd>
+              <dt>Aprendizado</dt><dd>Efeitos de texto em degradê e animações por letra conflitam. Vale pedir um ou outro, ou já pedir para testar no Chrome.</dd>
+            </dl>
+          </article>
+          <article class="fix fade-up">
+            <span class="fix__n">#4 · Hero</span>
+            <dl>
+              <dt>Problema</dt><dd>A legenda do projeto ("PAVIO Trading. Vite, GSAP e Supabase.") aparecia por cima da tela do notebook antes do scroll.</dd>
+              <dt>Correção</dt><dd>A legenda fica invisível e só aparece depois que o notebook cresce (a partir de 30% da animação).</dd>
+              <dt>Resultado</dt><dd>Resolveu totalmente.</dd>
+              <dt>Aprendizado</dt><dd>Descrever o estado inicial e o final de cada animação, não só o efeito.</dd>
+            </dl>
+          </article>
+          <article class="fix fade-up">
+            <span class="fix__n">#5 · Menu</span>
+            <dl>
+              <dt>Problema</dt><dd>O menu escuro translúcido ficava cinza e sem contraste nas seções de fundo claro.</dd>
+              <dt>Correção</dt><dd>O menu passou a trocar para a versão clara ao passar por seções claras, como na Apple. Num segundo ajuste, o gatilho mudou de 52px para 60px, porque ao clicar no link do menu a troca às vezes não disparava.</dd>
+              <dt>Resultado</dt><dd>Resolveu totalmente, em duas rodadas.</dd>
+              <dt>Aprendizado</dt><dd>Em páginas que alternam fundo escuro e claro, pedir desde o início que o menu acompanhe o fundo.</dd>
+            </dl>
+          </article>
+          <article class="fix fade-up">
+            <span class="fix__n">#6 · Trajetória</span>
+            <dl>
+              <dt>Problema</dt><dd>O último ponto da linha do tempo ("Produtos com IA") nunca ficava azul, porque a seção acabava antes de ele chegar ao gatilho.</dd>
+              <dt>Correção</dt><dd>1ª rodada: o gatilho subiu de 65% para 75% da altura da tela. Não bastou: abrindo a página direto em "#trajetoria", nenhum ponto acendia. 2ª rodada: os pontos passaram a usar o "toggleClass" do ScrollTrigger, que também é aplicado quando a página carrega.</dd>
+              <dt>Resultado</dt><dd>1ª rodada resolveu em parte. A 2ª resolveu totalmente.</dd>
+              <dt>Aprendizado</dt><dd>Animações ligadas ao scroll precisam ser testadas até o último item, não só no primeiro.</dd>
+            </dl>
+          </article>
+          <article class="fix fade-up">
+            <span class="fix__n">#7 · Celular</span>
+            <dl>
+              <dt>Problema</dt><dd>Numa tela de 390px, a página tinha 400px de largura e rolava para o lado.</dd>
+              <dt>Correção</dt><dd>Os itens da trajetória começavam 30px à direita antes de animar. A seção ganhou "overflow-x: clip" para cortar esse excesso.</dd>
+              <dt>Resultado</dt><dd>Resolveu totalmente.</dd>
+              <dt>Aprendizado</dt><dd>Pedir QA em largura de celular (390px) desde o primeiro prompt e checar se há rolagem horizontal.</dd>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.5 RESULTADO -->
+    <section class="doc" id="resultado">
+      <div class="wrap">
+        <p class="doc__num">3.5</p>
+        <h2 class="section-title reveal">Resultado final.</h2>
+        <div class="results">
+          <a class="result fade-up" href="/"><small>Deploy</small><b>Portfólio publicado ›</b></a>
+          <a class="result fade-up" href="https://github.com/D4NIELT0RRES" target="_blank" rel="noopener"><small>Repositório</small><b>github.com/D4NIELT0RRES ›</b></a>
+        </div>
+        <h3 class="doc__h3">Stack</h3>
+        <ul class="chips chips--doc"><li>Vite</li><li>GSAP</li><li>ScrollTrigger</li><li>SplitText</li><li>Lenis</li><li>HTML/CSS/JS</li><li>Vercel</li><li>Claude Code</li></ul>
+        <div class="reflection fade-up">
+          <h3 class="doc__h3">Reflexão</h3>
+          <p><b>O que ficou como imaginei:</b> <span class="todo">[escreva com suas palavras]</span></p>
+          <p><b>O que ainda mudaria:</b> <span class="todo">[escreva com suas palavras]</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__note">Checkpoint 6 · Vibecoding · Construindo uma landing page com IA.</p>
+      <div class="footer__bar">
+        <span>© <span data-year></span> Daniel Torres.</span>
+        <nav><a href="/">Portfólio</a><a href="#referencias">Referências</a><a href="#prompts">Prompts</a><a href="#correcoes">Correções</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
