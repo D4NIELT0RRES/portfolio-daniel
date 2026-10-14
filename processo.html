@@ -152,12 +152,16 @@ veja tudo que o homem produziou, o site que ele fez e faça um exatamente igual 
 
         <div class="critique fade-up">
           <h3 class="doc__h3">Análise crítica do prompt inicial</h3>
+          <p class="doc__p">Reli o prompt inicial depois do projeto pronto, comparando o que pedi com o que precisei corrigir. Cada falha abaixo tem uma causa no prompt e um efeito que aparece no registro de correções (3.4).</p>
           <ul>
-            <li><b>Faltou especificar o conteúdo.</b> O prompt não dizia quais projetos, skills e eventos entrar. A IA teve que procurar nas pastas do computador e no GitHub. Funcionou, mas poderia ter escolhido projetos que eu não queria mostrar.</li>
-            <li><b>"Parecido com a Apple" é vago.</b> Seria melhor citar as páginas exatas (MacBook Pro, AirPods Pro, iPhone) e o comportamento de cada uma, como fiz depois nas referências.</li>
-            <li><b>Faltaram cores, fontes e seções.</b> As decisões de IDV ficaram com a IA. Num prompt melhor, eu teria definido a paleta e a ordem das seções.</li>
-            <li><b>Ponto positivo:</b> citar a stack de um projeto anterior ("a tecnologia do vídeo do trade") deu à IA uma base técnica clara e evitou retrabalho.</li>
+            <li><b>Não defini o conteúdo.</b> Pedi "organize" o portfólio, mas não listei quais projetos, skills e eventos entrariam. A IA escolheu sozinha vasculhando minhas pastas e o GitHub. <i>Efeito:</i> entraram projetos com deploy quebrado (EventKit Pro com erro 404, KidsArena em branco), o que gerou a correção #2 e interfaces "ilustrativas" no lugar de capturas reais. <i>Melhoria:</i> listar os projetos, o link de cada um e quais estão no ar.</li>
+            <li><b>"Parecido com o site da Apple" não é verificável.</b> A Apple tem dezenas de páginas e nenhuma regra única. Sem apontar páginas e comportamentos, a IA interpretou o estilo à vontade e eu só defini as referências depois. <i>Melhoria:</i> citar páginas e efeitos exatos, como "notebook que cresce com o scroll (MacBook Pro)" e "texto que acende palavra por palavra (AirPods Pro)".</li>
+            <li><b>Não descrevi o estado inicial e final das animações.</b> Pedi perfeição e inovação, mas não o que cada animação deve mostrar antes e depois do scroll. <i>Efeito:</i> a legenda aparecia sobre a tela do notebook (#4), o "D" do título saiu cortado (#3) e o último ponto da trajetória nunca acendia (#6). <i>Melhoria:</i> descrever cada animação em "começa assim, termina assim".</li>
+            <li><b>Faltaram requisitos de QA.</b> O prompt não pediu teste em celular nem em fundos claros e escuros. <i>Efeito:</i> menu sem contraste nas seções claras (#5) e rolagem horizontal em 390px (#7), achados só depois. <i>Melhoria:</i> exigir teste em 390px e 1440px, com checagem de rolagem lateral e de contraste do menu.</li>
+            <li><b>Misturei tarefas no mesmo pedido.</b> Um único prompt pedia ler o PDF, criar o design, escolher a tecnologia e entregar o site. Isso dificultou localizar de onde vinha cada erro. <i>Melhoria:</i> dividir em etapas: 1) estrutura e conteúdo, 2) identidade visual, 3) animações, 4) QA.</li>
+            <li><b>O que funcionou:</b> apontar a stack de um projeto anterior (Vite, GSAP e Lenis) deu à IA uma base técnica clara, sem debate sobre ferramentas e com a mesma qualidade de animação do PAVIO. Ao mesmo tempo, pedir "a mesma perfeição" sem critérios deixou o termo vago: perfeição só vira requisito quando vem com medidas, como "sem rolagem horizontal" ou "contraste legível".</li>
           </ul>
+          <p class="doc__p"><b>Em resumo:</b> o prompt inicial transferiu para a IA as decisões de conteúdo, design e teste. O resultado ficou bom, mas pelo custo de sete correções que um pedido mais específico teria evitado em grande parte.</p>
         </div>
       </div>
     </section>
