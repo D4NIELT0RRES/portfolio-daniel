@@ -302,12 +302,13 @@ h1, h2, h3, p { margin: 0; }
 .fixes { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
 .fix { background: #fff; border-radius: 24px; padding: 28px; }
 .fix__n { font-family: var(--mono); font-size: .78rem; color: var(--blue-dark); }
-.fix dl { margin: 14px 0 0; display: grid; grid-template-columns: 110px 1fr; gap: 10px 14px; }
+.fix dl { margin: 14px 0 0; display: grid; grid-template-columns: 150px 1fr; gap: 10px 14px; }
 .fix dt { font-weight: 600; font-size: .95rem; }
 .fix dd { margin: 0; color: #424245; font-size: .95rem; }
 .results { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .result { background: #000; color: #fff; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 6px; transition: transform .4s var(--ease); }
 .result:hover { transform: scale(1.02); }
+.result:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .result small { color: #a1a1a6; font-weight: 600; }
 .result b { font-size: clamp(1.2rem, 2.2vw, 1.7rem); letter-spacing: -0.02em; }
 .chips--doc { margin-bottom: 10px; }

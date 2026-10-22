@@ -171,12 +171,13 @@ veja tudo que o homem produziou, o site que ele fez e faça um exatamente igual 
       <div class="wrap">
         <p class="doc__num">3.4</p>
         <h2 class="section-title reveal">Registro de correções.</h2>
-        <p class="doc__p">Problemas encontrados no QA (abrindo a página, clicando e rolando em desktop e celular), corrigidos um por vez. As rodadas #2 a #7 foram detectadas pela própria IA ao testar o site com capturas de tela, antes de qualquer prompt de ajuste.</p>
+        <p class="doc__p">Problemas encontrados no QA (abrindo a página, clicando e rolando em desktop e celular), corrigidos um por vez. As rodadas #2 a #7 foram detectadas pela própria IA ao testar o site com capturas de tela, antes de qualquer prompt de ajuste. Por isso o campo "Prompt de correção" diz "nenhum separado", em vez de um prompt que não existiu.</p>
         <div class="fixes" id="fixes-list">
           <article class="fix fade-up">
             <span class="fix__n">#1 · Projeto anterior (PAVIO)</span>
             <dl>
               <dt>Problema</dt><dd>Na página de cadastro do PAVIO, o título do topo ficava embaixo do menu fixo.</dd>
+              <dt>Prompt de correção</dt><dd>Nenhum separado: encontrado no QA da própria IA com capturas de tela.</dd>
               <dt>Correção</dt><dd>Encontrado no QA da própria IA com capturas de tela. Ela adicionou espaço no topo da seção (padding-top: 120px).</dd>
               <dt>Resultado</dt><dd>Resolveu totalmente.</dd>
               <dt>Aprendizado</dt><dd>Em sites com menu fixo, pedir no prompt que todo primeiro bloco tenha espaço para o menu.</dd>
@@ -186,6 +187,7 @@ veja tudo que o homem produziou, o site que ele fez e faça um exatamente igual 
             <span class="fix__n">#2 · Conteúdo</span>
             <dl>
               <dt>Problema</dt><dd>O deploy do EventKit Pro retornou erro 404 e o do KidsArena abriu em branco. Não havia como capturar as telas.</dd>
+              <dt>Prompt de correção</dt><dd>Nenhum separado: detectado pela IA no QA, dentro do prompt inicial.</dd>
               <dt>Correção</dt><dd>A IA recriou a interface do EventKit Pro e do BuscaGlobal em HTML/CSS, com o aviso "Interface ilustrativa", e linkou o GitHub no lugar do deploy quebrado.</dd>
               <dt>Resultado</dt><dd>Resolveu em parte: o visual ficou bom, mas o ideal é ter os projetos no ar.</dd>
               <dt>Aprendizado</dt><dd>Revisar os links de deploy antes de montar o portfólio e dizer no prompt quais projetos têm site no ar.</dd>
@@ -195,6 +197,7 @@ veja tudo que o homem produziou, o site que ele fez e faça um exatamente igual 
             <span class="fix__n">#3 · Hero</span>
             <dl>
               <dt>Problema</dt><dd>A letra "D" de "Daniel Torres." aparecia com um pedaço cortado no canto.</dd>
+              <dt>Prompt de correção</dt><dd>Nenhum separado: detectado pela IA no QA, dentro do prompt inicial.</dd>
               <dt>Correção</dt><dd>A causa era o degradê recortado no texto (background-clip) somado ao desfoque da animação letra por letra. O título passou a usar cor sólida, e o desfoque é removido ao fim da animação.</dd>
               <dt>Resultado</dt><dd>Resolveu totalmente.</dd>
               <dt>Aprendizado</dt><dd>Efeitos de texto em degradê e animações por letra conflitam. Vale pedir um ou outro, ou já pedir para testar no Chrome.</dd>
@@ -204,6 +207,7 @@ veja tudo que o homem produziou, o site que ele fez e faça um exatamente igual 
             <span class="fix__n">#4 · Hero</span>
             <dl>
               <dt>Problema</dt><dd>A legenda do projeto ("PAVIO Trading. Vite, GSAP e Supabase.") aparecia por cima da tela do notebook antes do scroll.</dd>
+              <dt>Prompt de correção</dt><dd>Nenhum separado: detectado pela IA no QA, dentro do prompt inicial.</dd>
               <dt>Correção</dt><dd>A legenda fica invisível e só aparece depois que o notebook cresce (a partir de 30% da animação).</dd>
               <dt>Resultado</dt><dd>Resolveu totalmente.</dd>
               <dt>Aprendizado</dt><dd>Descrever o estado inicial e o final de cada animação, não só o efeito.</dd>
@@ -213,6 +217,7 @@ veja tudo que o homem produziou, o site que ele fez e faça um exatamente igual 
             <span class="fix__n">#5 · Menu</span>
             <dl>
               <dt>Problema</dt><dd>O menu escuro translúcido ficava cinza e sem contraste nas seções de fundo claro.</dd>
+              <dt>Prompt de correção</dt><dd>Nenhum separado: detectado pela IA no QA, dentro do prompt inicial.</dd>
               <dt>Correção</dt><dd>O menu passou a trocar para a versão clara ao passar por seções claras, como na Apple. Num segundo ajuste, o gatilho mudou de 52px para 60px, porque ao clicar no link do menu a troca às vezes não disparava.</dd>
               <dt>Resultado</dt><dd>Resolveu totalmente, em duas rodadas.</dd>
               <dt>Aprendizado</dt><dd>Em páginas que alternam fundo escuro e claro, pedir desde o início que o menu acompanhe o fundo.</dd>
@@ -222,6 +227,7 @@ veja tudo que o homem produziou, o site que ele fez e faça um exatamente igual 
             <span class="fix__n">#6 · Trajetória</span>
             <dl>
               <dt>Problema</dt><dd>O último ponto da linha do tempo ("Produtos com IA") nunca ficava azul, porque a seção acabava antes de ele chegar ao gatilho.</dd>
+              <dt>Prompt de correção</dt><dd>Nenhum separado: detectado pela IA no QA, dentro do prompt inicial.</dd>
               <dt>Correção</dt><dd>1ª rodada: o gatilho subiu de 65% para 75% da altura da tela. Não bastou: abrindo a página direto em "#trajetoria", nenhum ponto acendia. 2ª rodada: os pontos passaram a usar o "toggleClass" do ScrollTrigger, que também é aplicado quando a página carrega.</dd>
               <dt>Resultado</dt><dd>1ª rodada resolveu em parte. A 2ª resolveu totalmente.</dd>
               <dt>Aprendizado</dt><dd>Animações ligadas ao scroll precisam ser testadas até o último item, não só no primeiro.</dd>
@@ -231,6 +237,7 @@ veja tudo que o homem produziou, o site que ele fez e faça um exatamente igual 
             <span class="fix__n">#7 · Celular</span>
             <dl>
               <dt>Problema</dt><dd>Numa tela de 390px, a página tinha 400px de largura e rolava para o lado.</dd>
+              <dt>Prompt de correção</dt><dd>Nenhum separado: detectado pela IA no QA, dentro do prompt inicial.</dd>
               <dt>Correção</dt><dd>Os itens da trajetória começavam 30px à direita antes de animar. A seção ganhou "overflow-x: clip" para cortar esse excesso.</dd>
               <dt>Resultado</dt><dd>Resolveu totalmente.</dd>
               <dt>Aprendizado</dt><dd>Pedir QA em largura de celular (390px) desde o primeiro prompt e checar se há rolagem horizontal.</dd>
@@ -248,6 +255,7 @@ veja tudo que o homem produziou, o site que ele fez e faça um exatamente igual 
         <div class="results">
           <a class="result fade-up" href="https://portfolio-daniel-torres-three.vercel.app" target="_blank" rel="noopener"><small>Deploy</small><b>portfolio-daniel-torres-three.vercel.app ›</b></a>
           <a class="result fade-up" href="https://github.com/D4NIELT0RRES/portfolio-daniel" target="_blank" rel="noopener"><small>Repositório</small><b>github.com/D4NIELT0RRES/portfolio-daniel ›</b></a>
+          <a class="result fade-up" href="https://github.com/D4NIELT0RRES/portfolio-daniel/tree/main/registros" target="_blank" rel="noopener"><small>Registros</small><b>Referências, prints e documentação ›</b></a>
         </div>
         <h3 class="doc__h3">Stack</h3>
         <ul class="chips chips--doc"><li>Vite</li><li>GSAP</li><li>ScrollTrigger</li><li>SplitText</li><li>Lenis</li><li>HTML/CSS/JS</li><li>Vercel</li><li>Claude Code</li></ul>
