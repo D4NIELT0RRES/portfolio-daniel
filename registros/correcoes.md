@@ -69,14 +69,58 @@ Problemas encontrados no QA (abrindo a página, clicando e rolando em desktop e 
 | **Resultado** | Resolveu totalmente. |
 | **Aprendizado** | Pedir QA em 390px desde o primeiro prompt e checar rolagem horizontal. |
 
+### #8 · Conteúdo e transparência
+| Campo | Registro |
+|---|---|
+| **Problema** | O deploy do EventKit Pro continua com 404 e o BuscaGlobal não foi publicado, mas apareciam só com "interface ilustrativa". O BuscaGlobal não tinha link, o contato era só o GitHub e o total de repositórios (74) estava fixo e desatualizado (hoje 75). |
+| **Prompt de correção** | Ajuste 2 ([prompts.md](prompts.md#332b-prompts-de-ajuste-enviados-depois-do-site-pronto)): o prompt que mandou aplicar as melhorias da avaliação, em partes. |
+| **Correção** | Selo de situação em cada projeto (No ar, Código no GitHub, Em desenvolvimento); rodapé explicando quais telas são recriações; e-mail e LinkedIn no contato; total de repositórios vindo da API do GitHub, com 75 como reserva. |
+| **Resultado** | Resolveu em parte: transparente, mas o ideal é publicar os dois projetos e usar capturas reais. |
+| **Aprendizado** | Dados que mudam devem vir de uma fonte. O prompt precisa dizer projeto por projeto o que está no ar. |
+
+### #9 · Celular (página de processo)
+| Campo | Registro |
+|---|---|
+| **Problema** | No QA em 390 px, `processo.html` rolava para o lado: os cartões de "Resultado final" tinham 400 px, porque a URL do repositório não quebra linha. A página inicial estava correta. |
+| **Prompt de correção** | Ajuste 2 ([prompts.md](prompts.md#332b-prompts-de-ajuste-enviados-depois-do-site-pronto)): o prompt que mandou aplicar as melhorias da avaliação, em partes. |
+| **Correção** | `min-width: 0` nos cartões e `overflow-wrap: anywhere` no texto. Depois, medi 360, 390, 768 e 1440 px nas duas páginas, rolando até o fim. |
+| **Resultado** | Resolveu totalmente. |
+| **Aprendizado** | O QA precisa cobrir todas as páginas. Grades com texto longo sem espaços (URLs) precisam de regra de quebra. |
+
+### #10 · Documentação do processo
+| Campo | Registro |
+|---|---|
+| **Problema** | Reflexão com marcadores "[escreva com suas palavras]" no site publicado, prompts de ajuste ausentes ("entram aqui"), pesquisa quase toda da Apple e paleta sem separar inspiração de decisão própria. |
+| **Prompt de correção** | Ajuste 2 ([prompts.md](prompts.md#332b-prompts-de-ajuste-enviados-depois-do-site-pronto)): o prompt que mandou aplicar as melhorias da avaliação, em partes. |
+| **Correção** | Reflexão escrita; prompts de ajuste registrados como enviados; Linear adicionado como referência (visto no navegador, com captura e uso no site); referências técnicas separadas das visuais; IDV com a origem de cada decisão. |
+| **Resultado** | Resolveu totalmente quanto ao registro. Paleta própria segue como próximo passo. |
+| **Aprendizado** | Reservar o fim do trabalho para a documentação e abrir o site publicado como o avaliador abriria. |
+
 ---
 
 ## Evolução
 
 | Tipo de problema | Rodadas | O que mudou no meu jeito de pedir |
 |---|---|---|
-| Conteúdo | #2 | Listar conteúdo e links em vez de deixar a IA escolher. |
+| Conteúdo | #2, #8 | Listar conteúdo e links em vez de deixar a IA escolher. |
 | Animação | #3, #4, #6 | Descrever início e fim de cada animação. |
-| Contraste / layout | #1, #5, #7 | Exigir QA em celular e em fundos claros e escuros. |
+| Contraste / layout | #1, #5, #7, #9 | Exigir QA em celular e em fundos claros e escuros. |
 
 Todas essas lições estão aplicadas no [prompt inicial reescrito](prompts.md#prompt-inicial-reescrito-versão-que-eu-usaria-hoje).
+| Documentação | #10 | Fechar o registro (reflexão, prompts, referências) antes de dar o trabalho por entregue. |
+
+## QA final
+
+Teste no navegador (Chrome), carregando as duas páginas em 360, 390, 768 e 1440 px e rolando até o fim:
+
+| Verificação | Resultado |
+|---|---|
+| Rolagem horizontal | Erro achado em `processo.html` a 390 px (#9); corrigido, sem rolagem lateral nas 4 larguras |
+| Erros de JavaScript | Nenhum capturado após o carregamento (página inicial, 3 larguras) |
+| Imagens e âncoras | Nenhuma imagem quebrada; nenhuma âncora sem destino |
+| Carrossel | Pausa/retoma e clique nos pontos funcionam (6 pontos) |
+| Projetos em detalhe | Último capítulo (PAVIO) ativa a tela correta |
+| Trajetória | 7 de 7 pontos acendem |
+| Menu | 5 links de seção chegam ao destino abaixo do menu fixo |
+| Links externos | Todos 200, exceto o deploy do EventKit Pro (404, marcado no site) |
+| Limites | Só Chrome; larguras simuladas com iframes; sem aparelhos físicos |

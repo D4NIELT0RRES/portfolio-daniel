@@ -259,7 +259,57 @@ analise tudo, voce 'é um analista critico e um professor altamente criterioso, 
               <dt>Aprendizado</dt><dd>Pedir QA em largura de celular (390px) desde o primeiro prompt e checar se há rolagem horizontal.</dd>
             </dl>
           </article>
+          <article class="fix fade-up">
+            <span class="fix__n">#8 · Conteúdo e transparência</span>
+            <dl>
+              <dt>Problema</dt><dd>O EventKit Pro continua com o deploy fora do ar (404) e o BuscaGlobal ainda não foi publicado, mas apareciam no site só com a nota "interface ilustrativa". O BuscaGlobal não tinha link nenhum, o contato era só o GitHub e o total de repositórios (74) estava fixo e já desatualizado (hoje são 75).</dd>
+              <dt>Prompt de correção</dt><dd>Ajuste 2 (ver 3.3): o prompt que mandou aplicar as melhorias da avaliação, em partes.</dd>
+              <dt>Correção</dt><dd>Cada projeto ganhou um selo de situação (No ar, Código no GitHub, Em desenvolvimento). O rodapé passou a dizer claramente quais telas são recriações. Entraram o e-mail e o LinkedIn na seção de contato. O total de repositórios passou a vir da API do GitHub, com o valor 75 como reserva.</dd>
+              <dt>Resultado</dt><dd>Resolveu em parte: o site agora é transparente, mas o ideal continua sendo publicar EventKit Pro e BuscaGlobal e trocar as interfaces ilustrativas por capturas reais.</dd>
+              <dt>Aprendizado</dt><dd>Dados que mudam (como contagens) devem vir de uma fonte, não ser digitados. E o prompt precisa dizer, projeto por projeto, o que está no ar e o que não está.</dd>
+            </dl>
+          </article>
+          <article class="fix fade-up">
+            <span class="fix__n">#9 · Celular (página de processo)</span>
+            <dl>
+              <dt>Problema</dt><dd>No QA com a página carregada em 390 px de largura, a <code>processo.html</code> rolava para o lado: os cartões de "Resultado final" tinham 400 px, porque o endereço do repositório não quebra linha. A página inicial estava correta.</dd>
+              <dt>Prompt de correção</dt><dd>Ajuste 2 (ver 3.3): o prompt que mandou aplicar as melhorias da avaliação, em partes.</dd>
+              <dt>Correção</dt><dd>Os cartões ganharam <code>min-width: 0</code> e o texto passou a quebrar em qualquer ponto (<code>overflow-wrap: anywhere</code>). Depois do ajuste, medi 360, 390, 768 e 1440 px nas duas páginas, rolando até o fim: sem rolagem horizontal.</dd>
+              <dt>Resultado</dt><dd>Resolveu totalmente.</dd>
+              <dt>Aprendizado</dt><dd>O QA do enunciado precisa cobrir todas as páginas, não só a principal. Itens de grade com texto longo sem espaços (URLs) precisam de regra de quebra.</dd>
+            </dl>
+          </article>
+          <article class="fix fade-up">
+            <span class="fix__n">#10 · Documentação do processo</span>
+            <dl>
+              <dt>Problema</dt><dd>A reflexão final estava com marcadores "[escreva com suas palavras]" no site publicado, a lista de prompts de ajuste dizia "entram aqui" sem nenhum prompt, a pesquisa de referências vinha quase toda da Apple e a paleta não deixava claro o que era inspiração e o que era decisão minha.</dd>
+              <dt>Prompt de correção</dt><dd>Ajuste 2 (ver 3.3): o prompt que mandou aplicar as melhorias da avaliação, em partes.</dd>
+              <dt>Correção</dt><dd>Reflexão escrita e publicada; os dois prompts de ajuste foram registrados exatamente como enviados; o Linear entrou como referência (visto no navegador, com captura e uso real no site); as referências de animação foram separadas das visuais; e a identidade visual passou a explicar o que é da Apple e o que é meu.</dd>
+              <dt>Resultado</dt><dd>Resolveu totalmente quanto ao registro. A paleta própria continua como próximo passo.</dd>
+              <dt>Aprendizado</dt><dd>Reservar tempo no fim para a documentação e abrir o site publicado como o avaliador abriria. Placeholders esquecidos custam mais do que um bug visual.</dd>
+            </dl>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <!-- QA -->
+    <section class="doc doc--mist" id="qa">
+      <div class="wrap">
+        <p class="doc__num">QA</p>
+        <h2 class="section-title reveal">Teste de verdade.</h2>
+        <p class="doc__p">Depois das correções, abri o site e testei o que o enunciado pede: clicar em tudo, em todas as telas. O teste foi feito no navegador, carregando as duas páginas em 360, 390, 768 e 1440 px e rolando até o fim. O que foi verificado e o resultado:</p>
+        <ol class="structure">
+          <li><b>Rolagem horizontal</b><span>Achou um erro na página de processo em 390 px (#9). Depois da correção, nenhuma das duas páginas rola para o lado nas 4 larguras.</span></li>
+          <li><b>Erros de JavaScript</b><span>Nenhum erro de execução capturado depois do carregamento, nas 3 larguras da página inicial.</span></li>
+          <li><b>Imagens e âncoras</b><span>Nenhuma imagem quebrada e nenhuma âncora aponta para seção inexistente.</span></li>
+          <li><b>Carrossel</b><span>O botão pausa e retoma; clicar no ponto 4 leva ao quarto card (são 6 pontos).</span></li>
+          <li><b>Projetos em detalhe</b><span>O último capítulo (PAVIO Trading) ativa a tela certa.</span></li>
+          <li><b>Trajetória</b><span>Todos os 7 pontos acendem ao chegar no fim.</span></li>
+          <li><b>Menu</b><span>Os 5 links de seção levam ao destino, parando logo abaixo do menu fixo.</span></li>
+          <li><b>Links externos</b><span>Todos responderam 200, exceto o deploy do EventKit Pro, que dá 404 e por isso aparece marcado como "deploy fora do ar".</span></li>
+          <li><b>Limites do teste</b><span>Não testei em aparelhos físicos nem em Safari ou Firefox; o teste foi em Chrome. Os tamanhos de tela foram simulados com iframes.</span></li>
+        </ol>
       </div>
     </section>
 
