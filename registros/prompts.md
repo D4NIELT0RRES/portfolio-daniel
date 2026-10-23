@@ -81,6 +81,30 @@ Por isso, a análise a seguir não altera o registro histórico do prompt
 original. Ela mostra como eu dividiria o trabalho em solicitações
 menores se fosse começar novamente.
 
+## 3.3.2b Prompts de ajuste (enviados depois do site pronto)
+
+Depois de publicar o site, enviei mais dois prompts, na ordem. Estão exatamente como escritos.
+
+### Ajuste 1: avaliação crítica
+
+``` text
+analide o projeto desse link:
+
+
+https://github.com/D4NIELT0RRES/portfolio-daniel
+
+
+analise tudo, voce 'é um analista critico e um professor altamente criterioso, o arquivo que voce enviou para a tarefa é esse que esta em anexo, e o link é o que eu estou entregando, /Users/danieltorres/Downloads/Checkpoint\ 6\ \(1\).pdf
+```
+
+### Ajuste 2: aplicar as melhorias
+
+``` text
+aplique as melhorias parte a parte no meu projeto que esta aberto no vscode, tenha em mente que voce nao deve fazer tudo de uma vez, va fazendo parte a parte e va dando git push como a minha conta unica e exclusiva como contribuidora, nao coloque o claude, entao aplique as devidas mudancas que vao me garantir nota maxima, depois de tudo voce me fala, nao fique perguntando nada, somente faça tudo de maneira profissional e detalhada
+```
+
+**Análise:** o Ajuste 1 foi eficaz porque definiu um papel (analista e professor criterioso) e anexou o enunciado como critério. O Ajuste 2 funcionou, mas é grande e mistura vários problemas (conteúdo, referências, documentação, QA). Contraria a dica do enunciado de corrigir um problema por vez. Para mitigar, exigi que o trabalho fosse feito em partes, com um commit por parte. Cada parte está registrada em [correcoes.md](correcoes.md) (#8 em diante).
+
 ## 3.3.3 Correções identificadas durante o desenvolvimento
 
 Conforme registrado no arquivo `correcoes.md`, as correções de número 2
