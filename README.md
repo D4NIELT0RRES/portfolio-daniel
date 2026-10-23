@@ -18,7 +18,7 @@ Toda a documentação está na pasta [`registros/`](registros/), um arquivo por 
 
 | Item | Documento | Resumo |
 |---|---|---|
-| 3.1 Referências | [referencias.md](registros/referencias.md) | 7 referências (MacBook Pro, AirPods Pro, iPhone, blocos bento, GSAP, Lenis, PAVIO) com capturas em [`registros/referencias/`](registros/referencias/) |
+| 3.1 Referências | [referencias.md](registros/referencias.md) | 8 referências (MacBook Pro, AirPods Pro, iPhone, blocos bento, GSAP, Lenis, PAVIO, Linear) com capturas em [`registros/referencias/`](registros/referencias/) |
 | 3.2 Identidade visual | [idv.md](registros/idv.md) | Paleta, tipografia, tom, títulos e estrutura |
 | 3.3 Prompts | [prompts.md](registros/prompts.md) | Prompts exatos, análise crítica e versão reescrita do prompt inicial |
 | 3.4 Correções | [correcoes.md](registros/correcoes.md) | 7 fichas de correção e a evolução do processo |

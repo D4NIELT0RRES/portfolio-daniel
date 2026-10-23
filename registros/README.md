@@ -4,7 +4,7 @@ Tudo o que o Checkpoint 6 pede, organizado por item do enunciado. O mesmo conte�
 
 | Item | Arquivo | Conteúdo |
 |---|---|---|
-| 3.1 | [referencias.md](referencias.md) | 7 referências: o que aproveitei e em qual seção usei |
+| 3.1 | [referencias.md](referencias.md) | 8 referências: o que aproveitei e em qual seção usei |
 | 3.2 | [idv.md](idv.md) | Paleta (hex + papel), tipografia, tom, títulos, estrutura e animações |
 | 3.3 | [prompts.md](prompts.md) | Prompts exatos, análise crítica e prompt reescrito |
 | 3.4 | [correcoes.md](correcoes.md) | Fichas de correção (problema, prompt, resultado, aprendizado) |

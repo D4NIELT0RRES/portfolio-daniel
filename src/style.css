@@ -335,4 +335,4 @@ h1, h2, h3, p { margin: 0; }
 .closing__mail { margin: 0 0 22px; font-size: 1.15rem; }
 .closing__mail a { color: var(--blue); }
 .closing__mail a:hover { text-decoration: underline; }
-.numbers__caption { flex-basis: 100%; margin: 28px 0 0; text-align: center; font-family: var(--mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gray); }
+.numbers__caption { grid-column: 1 / -1; margin: 28px 0 0; text-align: center; font-family: var(--mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gray); }
