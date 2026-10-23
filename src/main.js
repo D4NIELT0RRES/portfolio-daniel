@@ -40,6 +40,7 @@ document.fonts.ready.then(() => {
   ScrollTrigger.refresh();
 });
 initCounters();
+syncGithubCounts();
 initGallery();
 
 /* ---------- Nav clara sobre seções claras ---------- */
@@ -129,12 +130,14 @@ function initStatement() {
 /* ---------- Contadores ---------- */
 function initCounters() {
   $$('[data-count]').forEach((el) => {
-    const end = Number(el.dataset.count);
-    const start = el.hasAttribute('data-plain') ? end - 12 : 0;
-    const obj = { v: start };
     ScrollTrigger.create({
       trigger: el, start: 'top 88%', once: true,
-      onEnter: () => gsap.to(obj, { v: end, duration: reduceMotion ? 0 : 1.8, ease: 'expo.out', onUpdate: () => (el.textContent = Math.round(obj.v)) }),
+      // O valor é lido só ao entrar na tela, para aproveitar o total vindo da API do GitHub
+      onEnter: () => {
+        const end = Number(el.dataset.count);
+        const obj = { v: el.hasAttribute('data-plain') ? end - 12 : 0 };
+        gsap.to(obj, { v: end, duration: reduceMotion ? 0 : 1.8, ease: 'expo.out', onUpdate: () => (el.textContent = Math.round(obj.v)) });
+      },
     });
   });
 }
@@ -256,3 +259,16 @@ function initTimeline() {
 }
 
 window.addEventListener('load', () => ScrollTrigger.refresh());
+
+/* ---------- Números: o total de repositórios vem da API pública do GitHub ---------- */
+// O HTML já traz um valor de reserva; se a API falhar ou estourar o limite, ele continua valendo.
+async function syncGithubCounts() {
+  const el = $('[data-gh="public_repos"]');
+  if (!el) return;
+  try {
+    const res = await fetch('https://api.github.com/users/D4NIELT0RRES');
+    if (!res.ok) return;
+    const { public_repos } = await res.json();
+    if (Number.isFinite(public_repos) && public_repos > 0) el.dataset.count = public_repos;
+  } catch { /* mantém o valor de reserva */ }
+}

@@ -326,3 +326,12 @@ h1, h2, h3, p { margin: 0; }
   .fix dl { grid-template-columns: 1fr; gap: 2px; }
   .fix dd { margin-bottom: 10px; }
 }
+
+/* Situação de cada projeto (transparência: no ar, só no GitHub ou em desenvolvimento) */
+.status { display: inline-block; width: fit-content; margin: 0 0 4px; padding: 3px 10px; border-radius: 999px; font-size: .78rem; font-weight: 600; background: var(--mist); color: #424245; }
+.status--live { background: #e3f6e8; color: #1c6b34; }
+.status--repo { background: #e8eefc; color: #1f4aa8; }
+.status--dev { background: #fdf0d9; color: #8a5a00; }
+.closing__mail { margin: 0 0 22px; font-size: 1.15rem; }
+.closing__mail a { color: var(--blue); }
+.closing__mail a:hover { text-decoration: underline; }
