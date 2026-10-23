@@ -19,6 +19,21 @@ Os valores abaixo são os tokens reais do código, em [`src/style.css`](../src/s
 
 **Por que combinam:** preto, branco e cinzas formam a vitrine; a única cor forte é o degradê, então o olho vai direto para o que importa. Alternar seções escuras e claras cria ritmo, como nas páginas da Apple.
 
+## O que é inspiração da Apple e o que é decisão minha
+
+Para ser transparente sobre autoria: os neutros (`#000000`, `#F5F5F7`, `#1D1D1F`, `#86868B`) e o azul `#2997FF` seguem a paleta das páginas de produto da Apple, de propósito, porque o conceito do projeto é "meus projetos como produtos" e a referência principal é a Apple. Isso é uma escolha de conceito, mas não é uma paleta original.
+
+| Decisão | Origem |
+|---|---|
+| Neutros e azul de destaque | Inspirados na Apple (conceito "produto") |
+| Degradê azul → violeta `#BF5AF2`, restrito a palavras-chave e números | Minha: azul = código, violeta = criatividade |
+| `#0071E3` para botões (contraste com texto branco) | Ajuste meu, por acessibilidade |
+| JetBrains Mono nas etiquetas e legendas técnicas | Minha, com apoio do Linear |
+| Selos de situação do projeto (no ar / só no GitHub / em desenvolvimento) com verde, azul e âmbar suaves | Minha: transparência no conteúdo (ver correção #8) |
+| Ritmo alternando seções escuras e claras | Inspirado na Apple |
+
+**Próximo passo de IDV:** testar uma paleta própria (por exemplo, trocar o azul por uma cor de assinatura que apareça também no logo/favicon) para a identidade deixar de depender de uma única referência.
+
 ## Tipografia
 
 | Fonte | Uso | Sensação |
@@ -57,7 +72,7 @@ Escala dos títulos de seção: `clamp(2.4rem, 6vw, 4.5rem)`, peso 600, `letter-
 3. **Números** — prova rápida: repositórios, linguagens e desde quando programo.
 4. **Destaques** — visão geral de 6 projetos em cards, para quem tem pouco tempo.
 5. **Projetos em detalhe** — cinco projetos com contexto, stack e links, para quem quer se aprofundar.
-6. **Skills** — habilidades agrupadas por área, cada uma ligada a um projeto real.
+6. **Skills** — habilidades agrupadas por área; sempre que possível, ligadas a projetos reais (React e IA no EventKit Pro, Kotlin no DoeVida, GSAP e Lenis neste site).
 7. **Trajetória** — experiências e eventos de 2024 a 2026, em linha do tempo.
 8. **Contato** — chamada final para o GitHub e para a página de processo.
 
