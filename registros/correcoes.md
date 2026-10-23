@@ -105,9 +105,9 @@ Problemas encontrados no QA (abrindo a página, clicando e rolando em desktop e 
 | Conteúdo | #2, #8 | Listar conteúdo e links em vez de deixar a IA escolher. |
 | Animação | #3, #4, #6 | Descrever início e fim de cada animação. |
 | Contraste / layout | #1, #5, #7, #9 | Exigir QA em celular e em fundos claros e escuros. |
-
-Todas essas lições estão aplicadas no [prompt inicial reescrito](prompts.md#prompt-inicial-reescrito-versão-que-eu-usaria-hoje).
 | Documentação | #10 | Fechar o registro (reflexão, prompts, referências) antes de dar o trabalho por entregue. |
+
+Todas essas lições estão aplicadas nos [prompts divididos em etapas](prompts.md#335-como-eu-dividiria-os-pedidos-hoje).
 
 ## QA final
 

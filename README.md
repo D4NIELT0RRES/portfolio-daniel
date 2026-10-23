@@ -20,7 +20,7 @@ Toda a documentação está na pasta [`registros/`](registros/), um arquivo por 
 |---|---|---|
 | 3.1 Referências | [referencias.md](registros/referencias.md) | 8 referências (MacBook Pro, AirPods Pro, iPhone, blocos bento, GSAP, Lenis, PAVIO, Linear) com capturas em [`registros/referencias/`](registros/referencias/) |
 | 3.2 Identidade visual | [idv.md](registros/idv.md) | Paleta, tipografia, tom, títulos e estrutura |
-| 3.3 Prompts | [prompts.md](registros/prompts.md) | Prompts exatos, análise crítica e versão reescrita do prompt inicial |
+| 3.3 Prompts | [prompts.md](registros/prompts.md) | Prompt inicial e prompts de ajuste exatamente como enviados, análise crítica e proposta de prompts em etapas |
 | 3.4 Correções | [correcoes.md](registros/correcoes.md) | 10 fichas de correção, QA final e a evolução do processo |
 | 3.5 Resultado | [reflexao.md](registros/reflexao.md) | Links, prints e reflexão |
 
@@ -43,6 +43,14 @@ Toda a documentação está na pasta [`registros/`](registros/), um arquivo por 
 ## Estrutura da página
 
 Hero → Manifesto → Números → Destaques → Projetos em detalhe → Skills → Trajetória → Contato. Detalhes e justificativa em [idv.md](registros/idv.md#estrutura-da-página).
+
+## Situação dos projetos
+
+O site é explícito sobre o que está no ar: **Orbitrace** e **PAVIO Trading** têm deploy; **EventKit Pro** e **DoeVida** têm código no GitHub (o deploy do EventKit está fora do ar); **BuscaGlobal** está em desenvolvimento. As telas do EventKit Pro e do BuscaGlobal são recriações em HTML/CSS e estão marcadas como "interface ilustrativa".
+
+## QA
+
+Testado no Chrome em 360, 390, 768 e 1440 px, nas duas páginas, rolando até o fim: sem rolagem horizontal, sem imagens quebradas, carrossel, menu, capítulos e trajetória funcionando. Resultados e limites do teste em [correcoes.md](registros/correcoes.md#qa-final).
 
 ## Stack
 

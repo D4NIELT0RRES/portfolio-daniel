@@ -18,7 +18,7 @@ O conceito que une todas: **tratar cada projeto como um produto da Apple**, apre
 ## Por que essas e não outras
 
 - **Apple como referência principal:** as páginas de produto da Apple resolvem exatamente o problema de um portfólio: mostrar poucas coisas, com muito destaque, para alguém que tem pouco tempo.
-- **Uma referência por seção:** em vez de "um site parecido com a Apple" (vago demais, ver [análise crítica](prompts.md#análise-crítica-do-prompt-inicial)), cada seção tem uma página e um comportamento específico de origem.
+- **Uma referência por seção:** em vez de "um site parecido com a Apple" (vago demais, ver [análise crítica](prompts.md#334-análise-crítica-dos-meus-prompts)), cada seção tem uma página e um comportamento específico de origem.
 - **Referências de animação e técnicas (5, 6 e 7):** GSAP e Lenis não são design visual, são o comportamento de animação que escolhi (o enunciado aceita referências de animação). O repertório visual de fato vem da Apple (1 a 4) e do Linear (8). A #4 (blocos bento) não tem link nem captura porque é um padrão que aparece em várias páginas de produto da Apple, não uma página única.
 - **Limite desta pesquisa:** quase todo o repertório vem de uma fonte (Apple). O Linear foi acrescentado justamente para sair dela; ampliar ainda mais é um dos pontos de evolução listados na reflexão.
 - **PAVIO como referência técnica:** reaproveitar uma stack que eu já tinha testado evitou discussão sobre ferramentas e garantiu a qualidade das animações.
